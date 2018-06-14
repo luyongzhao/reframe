@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "热门话题",
+  "usingComponents": {
+    "i-card": "../../comp/iview/card/index",
+    "i-button": "../../comp/iview/button/index"
+  }
+}

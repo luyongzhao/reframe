@@ -1,0 +1,5 @@
+/**index.wxss**/
+.small-btn{
+  margin-left: 0rpx!important;
+  display: inline!important;
+}
