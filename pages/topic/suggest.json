@@ -1,1 +1,8 @@
-{}
+{
+  "navigationBarTitleText": "提供建议",
+  "usingComponents": {
+    "i-row": "../../comp/iview/row/index",
+    "i-col": "../../comp/iview/col/index",
+    "i-icon": "../../comp/iview/icon/index"
+  }
+}

@@ -1,2 +1,17 @@
 <!--pages/topic/suggest.wxml-->
-<text>pages/topic/suggest.wxml</text>
+
+<view class='container'>
+  <i-row>
+    <i-col span='4'>
+      <view bindtap='chooseImage'>
+        <i-icon type="picture" size='30' />
+      </view>
+    </i-col>
+    <i-col offset='16' span='4'><text class="text-info">发送</text></i-col>
+  </i-row>
+  <view class="line"></view>
+  <textarea bindblur="bindTextAreaBlur" auto-height placeholder="请输入您的建议" />
+  <view class="image-list" wx:for="{{uploadImgArray}}">
+    <image class="small-img" mode='aspectFit' src='{{ item }}'></image>   
+  </view>
+</view>

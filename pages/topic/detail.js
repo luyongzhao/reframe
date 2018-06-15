@@ -73,7 +73,11 @@ Page({
       current: e.detail.key
     });
     if (e.detail.key == "suggest") {
-      console.log("被点击：提供建议");
+      
+      wx.navigateTo({
+        url: './suggest',
+      })
+
     }else if (e.detail.key == "collection") {
 
       console.log("被点击：收藏");

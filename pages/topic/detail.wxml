@@ -16,17 +16,12 @@
       </view>
   </i-card>
 
-  <i-tabs current="all" color="#80848f">
-    <i-tab key="all" title="全部解答" ></i-tab>
-    <i-tab key="new" title="" ></i-tab>
-    <i-tab key="hot" title="" ></i-tab>
-    <i-tab key="hot" title="" ></i-tab>
-    <i-tab key="hot" title="" ></i-tab>
-    <i-tab key="hot" title="" ></i-tab>
-    <i-tab key="hot" title="" ></i-tab>
-  </i-tabs>
+  <!--防止被低栏遮挡列表显示 -->
+  <view style='padding-top:60rpx'></view>
 
-  <i-card title="可愉公主" full="true" extra="1楼" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+  <i-panel title="全部建议">
+    
+    <i-card title="可愉公主" full="true" extra="1楼" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
       <view slot="content">这里是解决方案1:所有的答案按照点赞数从大到小排序</view>
       <view slot="footer">
         <i-row>
@@ -38,37 +33,41 @@
             </i-col>
         </i-row>
       </view>
-  </i-card>
+    </i-card>
 
-  <i-card title="青蛙王子" full="true" extra="2楼" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-      <view slot="content">这里是解决方案2:所有的答案按照点赞数从大到小排序</view>
-      <view slot="footer">
-        <i-row>
-            <i-col span="7" i-class="col-class"><i-icon type="clock" />2018.04.28</i-col>
-            <i-col span="4" i-class="col-class"><i-icon type="coordinates" />北京</i-col>
-            <i-col offset="5" span="4" i-class="col-class"><i-icon type="praise" />100</i-col>
-            <i-col offset="1" span="3" i-class="col-class">
-              <text class="text-info" bindtap='reply' data-id="123">回复</text>
-            </i-col>
-        </i-row>
-      </view>
-  </i-card>
-  <i-card title="桃子妈妈" full="true" extra="2楼" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-      <view slot="content">这里是解决方案2:所有的答案按照点赞数从大到小排序</view>
-      <view slot="footer">
-        <i-row>
-            <i-col span="7" i-class="col-class"><i-icon type="clock" />2018.04.28</i-col>
-            <i-col span="4" i-class="col-class"><i-icon type="coordinates" />北京</i-col>
-            <i-col offset="5" span="4" i-class="col-class"><i-icon type="praise" />100</i-col>
-            <i-col offset="1" span="3" i-class="col-class">
-              <text class="text-info" bindtap='reply' data-id="123">回复</text>
-            </i-col>
-        </i-row>
-      </view>
-  </i-card>
+    <i-card title="青蛙王子" full="true" extra="2楼" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+        <view slot="content">这里是解决方案2:所有的答案按照点赞数从大到小排序</view>
+        <view slot="footer">
+          <i-row>
+              <i-col span="7" i-class="col-class"><i-icon type="clock" />2018.04.28</i-col>
+              <i-col span="4" i-class="col-class"><i-icon type="coordinates" />北京</i-col>
+              <i-col offset="5" span="4" i-class="col-class"><i-icon type="praise" />100</i-col>
+              <i-col offset="1" span="3" i-class="col-class">
+                <text class="text-info" bindtap='reply' data-id="123">回复</text>
+              </i-col>
+          </i-row>
+        </view>
+    </i-card>
+    <i-card title="桃子妈妈" full="true" extra="3楼" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+        <view slot="content">这里是解决方案3:所有的答案按照点赞数从大到小排序</view>
+        <view slot="footer">
+          <i-row>
+              <i-col span="7" i-class="col-class"><i-icon type="clock" />2018.04.28</i-col>
+              <i-col span="4" i-class="col-class"><i-icon type="coordinates" />北京</i-col>
+              <i-col offset="5" span="4" i-class="col-class"><i-icon type="praise" />100</i-col>
+              <i-col offset="1" span="3" i-class="col-class">
+                <text class="text-info" bindtap='reply' data-id="123">回复</text>
+              </i-col>
+          </i-row>
+        </view>
+    </i-card>
 
-  <!--防止被低栏遮挡列表显示 -->
-  <view style='padding-top:60rpx'></view>
+  </i-panel>
+
+  
+
+<!--防止被低栏遮挡列表显示 -->
+<view style='padding-top:60rpx'></view>
 
   <i-tab-bar current="{{ current }}" bindchange="barClick" fixed="true">
     <i-tab-bar-item key="suggest" icon="brush" current-icon="brush_fill" title=""></i-tab-bar-item>
