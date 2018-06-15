@@ -1,1 +1,15 @@
-{}
+{
+  "navigationBarTitleText": "话题详情",
+  "usingComponents": {
+    "i-card": "../../comp/iview/card/index",
+    "i-button": "../../comp/iview/button/index",
+    "i-icon": "../../comp/iview/icon/index",
+    "i-tag": "../../comp/iview/tag/index",
+    "i-tabs": "../../comp/iview/tabs/index",
+    "i-tab": "../../comp/iview/tab/index",
+    "i-row": "../../comp/iview/row/index",
+    "i-col": "../../comp/iview/col/index",
+    "i-tab-bar": "../../comp/iview/tab-bar/index",
+    "i-tab-bar-item": "../../comp/iview/tab-bar-item/index"
+  }
+}

@@ -1,11 +1,11 @@
-// pages/topic/detail.js
+// pages/topic/suggest.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    current: ''
+  
   },
 
   /**
@@ -62,28 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-  reply: function(e){
-
-    console.log(JSON.stringify(e));
-  },
-  barClick: function(e) {
-    //console.log(e);
-    this.setData({
-      current: e.detail.key
-    });
-    if (e.detail.key == "suggest") {
-      console.log("被点击：提供建议");
-    }else if (e.detail.key == "collection") {
-
-      console.log("被点击：收藏");
-    }else if (e.detail.key == "share") {
-
-      console.log("被电击：分享");
-    }
-
-    this.setData({
-      current: e.detail.key
-    });
-  },
+  }
 })

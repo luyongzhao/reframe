@@ -5,7 +5,8 @@
     "pages/topic/detail",
     "pages/read/index",
     "pages/my/index",
-    "pages/authorize/index"
+    "pages/authorize/index",
+    "pages/topic/suggest"
   ],
   "window": {
     "backgroundTextStyle": "light",

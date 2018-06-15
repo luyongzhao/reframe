@@ -1,2 +1,79 @@
 <!--pages/topic/detail.wxml-->
-<text>pages/topic/detail.wxml</text>
+<view>
+
+  <i-card title="张三" full="true" extra="楼主" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <view slot="content">儿童在敏感期拥有一种特殊的内在活力，能够以惊人的方式自然而然地吸收和学习。当儿童的敏感性受到外界的干扰和阻碍时，他们就会产生抑郁或愤怒的情绪。</view>
+      <view slot="footer">
+        <i-row>
+            <i-col span="7" i-class="col-class"><i-icon type="clock" />35分钟前</i-col>
+            <i-col span="4" i-class="col-class"><i-icon type="coordinates" />上海</i-col>
+            <i-col offset="5" span="4" i-class="col-class"><i-icon type="browse" />102</i-col>
+            <i-col offset="1" span="3" i-class="col-class">
+              <text class="text-info" bindtap='reply' data-id="123">分享</text>
+            </i-col>
+        </i-row>
+        
+      </view>
+  </i-card>
+
+  <i-tabs current="all" color="#80848f">
+    <i-tab key="all" title="全部解答" ></i-tab>
+    <i-tab key="new" title="" ></i-tab>
+    <i-tab key="hot" title="" ></i-tab>
+    <i-tab key="hot" title="" ></i-tab>
+    <i-tab key="hot" title="" ></i-tab>
+    <i-tab key="hot" title="" ></i-tab>
+    <i-tab key="hot" title="" ></i-tab>
+  </i-tabs>
+
+  <i-card title="可愉公主" full="true" extra="1楼" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <view slot="content">这里是解决方案1:所有的答案按照点赞数从大到小排序</view>
+      <view slot="footer">
+        <i-row>
+            <i-col span="7" i-class="col-class"><i-icon type="clock" />2018.04.28</i-col>
+            <i-col span="4" i-class="col-class"><i-icon type="coordinates" />北京</i-col>
+            <i-col offset="5" span="4" i-class="col-class"><i-icon type="praise" />100</i-col>
+            <i-col offset="1" span="3" i-class="col-class">
+              <text class="text-info" bindtap='reply' data-id="123">回复</text>
+            </i-col>
+        </i-row>
+      </view>
+  </i-card>
+
+  <i-card title="青蛙王子" full="true" extra="2楼" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <view slot="content">这里是解决方案2:所有的答案按照点赞数从大到小排序</view>
+      <view slot="footer">
+        <i-row>
+            <i-col span="7" i-class="col-class"><i-icon type="clock" />2018.04.28</i-col>
+            <i-col span="4" i-class="col-class"><i-icon type="coordinates" />北京</i-col>
+            <i-col offset="5" span="4" i-class="col-class"><i-icon type="praise" />100</i-col>
+            <i-col offset="1" span="3" i-class="col-class">
+              <text class="text-info" bindtap='reply' data-id="123">回复</text>
+            </i-col>
+        </i-row>
+      </view>
+  </i-card>
+  <i-card title="桃子妈妈" full="true" extra="2楼" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <view slot="content">这里是解决方案2:所有的答案按照点赞数从大到小排序</view>
+      <view slot="footer">
+        <i-row>
+            <i-col span="7" i-class="col-class"><i-icon type="clock" />2018.04.28</i-col>
+            <i-col span="4" i-class="col-class"><i-icon type="coordinates" />北京</i-col>
+            <i-col offset="5" span="4" i-class="col-class"><i-icon type="praise" />100</i-col>
+            <i-col offset="1" span="3" i-class="col-class">
+              <text class="text-info" bindtap='reply' data-id="123">回复</text>
+            </i-col>
+        </i-row>
+      </view>
+  </i-card>
+
+  <!--防止被低栏遮挡列表显示 -->
+  <view style='padding-top:60rpx'></view>
+
+  <i-tab-bar current="{{ current }}" bindchange="barClick" fixed="true">
+    <i-tab-bar-item key="suggest" icon="brush" current-icon="brush_fill" title=""></i-tab-bar-item>
+    <i-tab-bar-item key="collection" icon="collection" current-icon="collection_fill" title=""></i-tab-bar-item>
+    <i-tab-bar-item key="share" icon="share" current-icon="share_fill" title=""></i-tab-bar-item>
+  </i-tab-bar>
+
+</view>

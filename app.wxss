@@ -10,3 +10,38 @@
 .wxParse-img {
   display: block !important;
 }
+
+.small-btn{
+  margin-left: 0rpx!important;
+  display: inline!important;
+}
+.default-label{
+
+  margin-left: 5rpx!important;
+  margin-right: 5rpx!important;
+}
+.hide-border{
+
+  border-width: 0px!important;
+}
+
+.text-info{
+
+  color: #2d8cf0
+}
+.text-success{
+
+  color: #19be6b
+}
+.text-warning{
+
+  color: #19be6b
+}
+.text-error{
+
+  color: #ed3f14
+}
+.text-btn{
+
+  text-decoration: underline
+}
